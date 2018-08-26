@@ -7,6 +7,8 @@
 
 
     {!! Form::model($message, ['route' => ['messages.update', $message->id], 'method' => 'put']) !!}
+        {!! Form::label('title', 'タイトル:') !!}
+        {!! Form::text('title') !!}
 
         {!! Form::label('content', 'メッセージ:') !!}
         {!! Form::text('content') !!}
